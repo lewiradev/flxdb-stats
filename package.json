@@ -1,0 +1,77 @@
+{
+  "name": "flxdb-stats",
+  "version": "0.1.2",
+  "description": "A lightweight, zero-dependency statistics and metrics wrapper for flxdb. Tracks read/write/delete operations, latency, uptime, file size, and more.",
+  "keywords": [
+    "flxdb",
+    "stats",
+    "metrics",
+    "monitoring",
+    "database",
+    "performance",
+    "key-value",
+    "json",
+    "latency",
+    "analytics",
+    "developer-tools"
+  ],
+  "homepage": "https://github.com/lewiradev/flxdb-stats#readme",
+  "bugs": {
+    "url": "https://github.com/lewiradev/flxdb-stats/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewiradev/flxdb-stats.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "lewiradev",
+    "url": "https://github.com/lewiradev"
+  },
+
+  "type": "commonjs",
+  "main": "index.js",
+  "types": "index.d.ts",
+
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+
+  "sideEffects": false,
+
+  "typesVersions": {
+    "*": {
+      "*": [
+        "index.d.ts"
+      ]
+    }
+  },
+
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+
+  "scripts": {
+    "test": "node test.js || echo \"flxdb-stats test runner not implemented yet\""
+  },
+
+  "peerDependencies": {
+    "flxdb": ">=1.0.1"
+  },
+
+  "engines": {
+    "node": ">=16.0.0"
+  },
+
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/lewiradev"
+  }
+}
